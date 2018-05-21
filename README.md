@@ -353,6 +353,11 @@ module.exports = {
     }
 }
 ```
+Change **index.html**
+```html
+src="img/member_01.jpg"
+src="img/member_01.jpg<% require('./img/member_01.jpg') %>"
+```
 ___
 #### [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 ```bash
