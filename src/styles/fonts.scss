@@ -1,0 +1,40 @@
+@font-face {
+    font-family: font_main;
+    src: url(../fonts/Open_Sans.ttf);
+}
+@font-face {
+    font-family: font_titles;
+    src: url(../fonts/Open_Sans_Semibold.ttf);
+}
+@font-face {
+    font-family: font_light;
+    src: url(../fonts/Open_Sans_Light.ttf);
+}
+@font-face {
+    font-family: font_client_said;
+    src: url(../fonts/SourceSansPro_Regular.ttf);
+}
+@font-face {
+    font-family: font_client_name;
+    src: url(../fonts/SourceSansPro_SemiBold.ttf);
+}
+@font-face {
+    font-family: font_client_job;
+    src: url(../fonts/SourceSansPro_Regular.ttf);
+}
+@font-face {
+    font-family: font_icons;
+    src: url(../fonts/FontAwesome.woff2);
+}
+:root {
+    --font-size-medium:     30px;
+}
+$font-size-standart:        16px;
+$font-size-standart-tall:   17px;
+$font-size-logo:            37px;
+$font-size-stars:         12.5px;
+$font-size-skill:           11px;
+$font-size-main:            20px;
+$font-size-small:           15px;
+$font-size-medium:          30px;
+$font-size-big:             50px;

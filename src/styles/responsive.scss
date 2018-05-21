@@ -1,0 +1,239 @@
+@media (max-width: 1010px) {
+    .services {
+        &__content {
+            flex-wrap: wrap;
+        }
+        .list {
+            flex-basis: 100%;
+            flex-direction: row;
+            margin-bottom: 20px;
+            margin: 0 0 20px;
+            &__label {
+                width: 104px;
+                margin: 0 10px;
+            }
+        }
+        &__specifications {
+            flex-basis: 64%;
+            .specification {
+                &__description {
+                    -webkit-line-clamp: 5 !important;
+                }
+            }
+        }
+        &__image {
+            flex-basis: 36%;
+        }
+    }
+    .modal {
+        &__close {
+            right: 20px;
+        }
+        &__arrow {
+            right: auto;
+        }
+    }
+}
+@media (max-width: 820px) {
+    .title {
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    .header {
+        margin: 20px 0;
+    }
+    .smart-agency {
+        padding-top: 0;
+        .forms {
+            margin-top: 30px;
+        }
+    }
+    .work-process {
+        padding: 30px 0;
+        .processes {
+            margin-top: 30px;
+        }
+    }
+    .featured-work {
+        padding: 30px 0;
+        .category {
+            margin-top: 40px;
+        }
+    }
+    .services {
+        padding-top: 30px;
+        &__content {
+            padding: 50px 0 40px;
+        }
+        .list {
+            order: 1;
+            flex-basis: auto;
+        }
+        &__specifications {
+            flex-basis: 100%;
+            order: 3;
+        }
+        &__image {
+            order: 2;
+            flex-basis: 124px;
+            flex-shrink: 0;
+        }
+    }
+    .team {
+        padding: 30px 0;
+        &__members {
+            margin-top: 0;
+        }
+    }
+    .client-said {
+        padding: 30px 0;
+        .container {
+            padding: 0 22px;
+            overflow: hidden;
+        }
+        &__slider {
+            margin-top: 30px;
+        }
+        .slider {
+            &__carousel {
+                padding-bottom: 50px;
+            }
+            .carousel {
+                &__slide {
+                    margin: 55px 2% 0;
+                    flex-basis: 96%;
+                }
+            }
+        }
+    }
+    .logo {
+        &__content {
+            padding: 30px 0 10px;
+        }
+    }
+    .footer {
+        padding-top: 20px;
+        &__copyright {
+            padding: 10px 0;
+        }
+    }
+}
+@media (max-width: 690px) {
+    .anchor {
+        height: 70px;
+    }
+    .anchor-home {
+        height: 0;
+    }
+    .header {
+        margin: 0;
+    }
+    .featured-work {
+        .gallery {
+            &__item {
+                &:nth-child(1n+9) {
+                    position: absolute;
+                    flex-basis: 0;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            .item {
+                &_show {
+                    flex-basis: 48%;
+                }
+            }
+        }
+    }
+    .services {
+        &__content {
+            padding-top: 20px;
+        }
+        .list {
+            flex-basis: 100%;
+            order: 2;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            &__label {
+                margin: 5px;
+            }
+        }
+        &__image {
+            height: 200px;
+            flex-basis: 100%;
+            order: 1;
+        }
+    }
+    .client-said {
+        .slider {
+            .carousel {
+                &__slide {
+                    margin: 55px 2.5% 0;
+                    flex-basis: 95%;
+                    &:nth-child(1) {/*--------------------------REMOVE*/
+                        box-shadow: 0px 0px 15px 0 $color-outer;
+                    }
+                    &_active {
+                        box-shadow: 0px 0px 15px 0 $color-outer;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 460px) {
+    .container {
+        padding: 0 10px;
+    }
+    .smart-agency {
+        .forms {
+            justify-content: center;
+            .form-send-message {
+                padding: 20px;
+                &_done {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+    .featured-work {
+        .category {
+            &__label {
+                padding: 4px;
+            }
+        }
+    }
+    .team {
+        padding-bottom: 5px;
+        .members {
+            &__member {
+                margin: 25px 0;
+            }
+        }
+    }
+    .client-said {
+        .slider {
+            .carousel {
+                &__slide {
+                    padding-top: 50px;
+                    padding-bottom: 20px;
+                    margin: 55px 3% 0;
+                    flex-basis: 94%;
+                    &:nth-child(1) {/*--------------------------REMOVE*/
+                        box-shadow: 0px 0px 10px 0 $color-outer;
+                    }
+                    &_active {
+                        box-shadow: 0px 0px 10px 0 $color-outer;
+                    }
+                }
+                .slide {
+                    &__stars {
+                        margin: 8px 0 7px;
+                    }
+                }
+            }
+        }
+    }
+}

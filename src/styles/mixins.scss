@@ -1,0 +1,33 @@
+@mixin process($color) {
+    background: $color;
+    .button:hover {
+        border-color: $color;
+    }
+    .button:active {
+        border-color: $color;
+        box-shadow: inset 0 1px 15px 0 $color;
+    }
+}
+@mixin button {
+    font-size: $font-size-standart;
+    font-family: font_main;
+    box-sizing: border-box;
+    height: 55px;
+    border-radius: 55px;
+    outline: none;
+    cursor: pointer;
+}
+@mixin button-light {
+    color: $color-primary;
+    border: 1px solid $color-outer-light;
+    box-shadow: 0 10px 20px 0 $color-outer-light;
+    background: $color-bg-light;
+    width: 240px;
+    &:hover {
+        border-color: $color-highlight-contrast;
+    }
+    &:active {
+        border-color: $color-highlight-contrast;
+        box-shadow: inset 0 0 15px 0 $color-highlight-contrast;
+    }
+}
