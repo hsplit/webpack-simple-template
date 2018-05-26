@@ -409,9 +409,14 @@ Create file **tsconfig.json**
 ```json
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+    "module": "es2015",
+    "target": "esnext",
+    "sourceMap": true,
+    "lib": [
+      "es2015",
+      "dom",
+      "dom.iterable"
+    ]
   },
   "exclude": [
     "node_modules"
