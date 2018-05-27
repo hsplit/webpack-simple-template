@@ -7,7 +7,8 @@
       "es2015",
       "dom",
       "dom.iterable"
-    ]
+    ],
+    "experimentalDecorators": true
   },
   "exclude": [
     "node_modules"

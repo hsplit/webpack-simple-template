@@ -1,5 +1,5 @@
 # Webpack 4. Simple template
-Webpack, webpack-cli, style-loader, css-loader, mini-css-extract-plugin, optimize-css-assets-webpack-plugin, clean-webpack-plugin, rimraf, html-webpack-plugin, node-sass, sass-loader, less, less-loader, autoprefixer, postcss-loader, uglifyjs-webpack-plugin, babel-core, babel-loader, babel-preset-env, babel-preset-stage-0, file-loader, image-webpack-loader, webpack-dev-server, typescript, ts-loader.
+Webpack, webpack-cli, style-loader, css-loader, mini-css-extract-plugin, optimize-css-assets-webpack-plugin, clean-webpack-plugin, rimraf, html-webpack-plugin, node-sass, sass-loader, less, less-loader, autoprefixer, postcss-loader, uglifyjs-webpack-plugin, babel-core, babel-loader, babel-preset-env, babel-preset-stage-0, file-loader, image-webpack-loader, webpack-dev-server, typescript, ts-loader, tslint.
 ___
 #### package.json
 Create file **package.json**
@@ -416,13 +416,53 @@ Create file **tsconfig.json**
       "es2015",
       "dom",
       "dom.iterable"
-    ]
+    ],
+    "experimentalDecorators": true
   },
   "exclude": [
     "node_modules"
   ]
 }
 ```
+___
+#### [tslint](https://palantir.github.io/tslint/usage/cli/)
+```bash
+npm i -D tslint
+```
+Create file **tslint.json**
+```bash
+./node_modules/.bin/tslint --init
+```
+```json
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {},
+    "rulesDirectory": []
+}
+```
+Change file **tslint.json**
+```json
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "quotemark": [
+            true,
+            "single"
+        ]
+    },
+    "rulesDirectory": []
+}
+```
+https://github.com/mgechev/codelyzer
+https://github.com/mgechev/tslint-angular
 ___
 webpack --json --profile >stats.json
 http://webpack.github.io/analyse/
